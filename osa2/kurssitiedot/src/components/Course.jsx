@@ -1,6 +1,4 @@
-const Title = ({ title }) => <h1>{title}</h1>;
-
-const Header = ({ courseName }) => <h2>{courseName}</h2>;
+const Header = ({ courseName }) => <h2>{courseName}</h2>
 
 const Content = ({ parts }) => {
   return (
@@ -31,7 +29,6 @@ const Total = ({ parts }) => {
 const Course = ({ course }) => {
   return (
     <div>
-        <Title title="Web development curriculum" />
         <Header courseName={course.name} />
         <Content parts={course.parts} />
         <p><strong>Total exercises: {Total({ parts: course.parts })}</strong></p>

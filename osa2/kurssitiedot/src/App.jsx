@@ -1,5 +1,7 @@
 import Course from './components/Course'
 
+const Title = ({ title }) => <h1>{title}</h1>
+
 const App = () => {
   const courses = [
     {
@@ -48,6 +50,7 @@ const App = () => {
 
   return (
     <div>
+      <Title title="Web development curriculum" />
       {courses.map(course => (
         <Course key={course.id} course={course} />
       ))}
